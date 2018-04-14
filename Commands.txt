@@ -1,0 +1,29 @@
+Configuration of hadoop 
+edited the configuration of following
+core-site.xml 
+hdfs-site.xml
+mapred-site.xml
+yarn-site.xml
+
+In hdfs-site, only added namenode directory in the master. 
+And added only the datanode directoty in the slaves hdfs-site.xml.
+Added the java home path in hadoop-env.xml
+
+Command to run the code in 
+Pseudo - Distributed and Fully Distributed Modes
+
+making directory
+
+hadoop fs -mkdir -p /Wikipedia/input
+hadoop fs -put 100KWikiText.txt /Wikipedia/input
+
+(where /Wikipedia/input = input directory 
+& /Wikipedia/output = output directory)
+
+
+hadoop -jar CountingWords.jar /Wikipedia/input /Wikipedia/output
+
+hadoop fs -get /Wikipedia/output/part-r-00000
+
+10
+and copied it from there .

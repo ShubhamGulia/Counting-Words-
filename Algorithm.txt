@@ -1,0 +1,16 @@
+Algorithm:
+
+
+1. Splitting the entire file by a space, and combining all the words.
+
+
+2. Traversing through all the words and making the pairs of each consecutive words.
+
+3. Mapping the pairs of words as the ring and their values as 1.
+
+
+4. Combining all the same word pairs with the number of time they occur in the document.
+
+5. In reducer,counting the total word pairs of the particular word and adding it to a TreeSet with both the words of that pair and their relative frequency.
+
+6. Writing the top 100 results in an output file.

@@ -1,0 +1,24 @@
+
+Settings of Mapper 1:
+Input Key: LongWritable\
+Input Value: Text\
+\
+Output Key: Text\
+Output Value: Text
+
+Settings of Reducer 1: Input Key: Text\
+Input Value: Text\
+\
+Output Key: Text\
+Output Value: Text
+Settings of Reducer 2:
+Input Key: Text\
+Input Value: Text\
+\
+Output Key: Text\
+Output Value: Text
+
+Number of instances used for Fully Distributed Mode: 2
+
+Execution time in Pseudo Distributed Mode: 1 minute 16 seconds
+Execution time in Fully Distributed Mode: 56 seconds
